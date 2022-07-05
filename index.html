@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/01543a5e59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>CyWeather</title>
+</head>
+
+<body>
+    <nav>
+        <div class="tag">CyWeather</div>
+        <ul>
+            <li><a target='_blank' href="https://github.com/kiboiWanjohi"><i id='git'
+                        class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <p>Enter Latitude and Longitude</p>
+        <form action="submit">
+            <label for="Latitude"><input type="text" name="latitude" id="lat" placeholder="Latitude"></label>
+            <label for="Longitude"><input type="text" name="longitude" id="long" placeholder="Longitude"></label>
+            <button type="submit" id="btn">Submit</button>
+
+        </form>
+    </div>
+    <div id="results">
+        <h5>Weather Results</h5>
+    </div>
+    <div id="stupid-results"></div>
+
+</body>
+<script src="./app.js"></script>
+
+</html>

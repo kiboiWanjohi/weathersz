@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap');
+
+*{
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+
+font-family: Arima;
+ background-image: url('./weather-1.jpg'); 
+ background-repeat: no-repeat;
+ background-size: cover;  
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh; 
+}
+nav .tag{
+    font-size: larger;
+    color: black;
+}
+nav ul li{
+    list-style-type: none
+}
+nav ul li a #git{
+    color: rgba(0,0,0,.55)
+}
+nav ul li a:hover{
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 50vh; */
+    flex-direction: column;
+    color: white;
+}
+.main p{
+    font-size: 18px;
+    color: black;
+}
+form{
+    display: grid;
+}
+#lat, #long{
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 9px;
+    box-sizing: border-box;
+    margin: 8px 0;
+}
+#btn{
+text-align: center;
+padding: 8px 24px;
+text-decoration: none;
+font-size: 14px;
+border-radius: 9px;
+}
+#btn:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+.results{
+    display: flex;
+    max-height: 70vh;
+    flex-direction: column;
+}
+
+table{
+    width: 100%;
+    border: 3px solid rgb(34, 32, 34);
+    table-layout: fixed;
+     border-collapse: collapse;
+}
+th, td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+table th{
+    width: 25%;
+}
+table td{
+    border-bottom: 1px solid black;
+    width: 25%;
+}
+
+/*
+.location{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    height: 30vh;
+    align-items: center;
+}
+.temparature{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 5vh;
+    align-items: center;
+}
+.degree{
+    cursor: pointer;
+}
+span{
+    margin: 10px;
+    font-size: 30px;
+}
+.weather{
+    display: flex;
+} */
